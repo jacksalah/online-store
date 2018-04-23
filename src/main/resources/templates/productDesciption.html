@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Title</title>
+</head>
+<style>table, th, td {
+    border: 1px solid blue;
+}</style>
+<body>
+
+<table>
+    <tr>
+        <th>Product name</th>
+        <th>type</th>
+        <th>Store ID</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <tr th:each="t : ${st}">
+
+        <td th:text="${t.getName()}"></td>
+        <td th:text="${t.getProduct_type()}"></td>
+        <td th:text="${t.getStore_ID()}"></td>
+        <td th:text="${t.getQuntity()}"></td>
+        <td th:text="${t.getPrice()}"></td>
+
+    </tr>
+</table>
+
+<form action="#" th:action="@{/Buy}" method="get">
+    <P><input type="submit" value="buy"/></P>
+
+</form>
+</body>
+</html>
