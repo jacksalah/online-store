@@ -30,7 +30,7 @@ public class ActionsController {
     @GetMapping("/viewActionsST")
     public java.lang.String DeleteProduct_ToStore(Model model) {
         model.addAttribute("storeName", new Store());
-        System.out.println("test");
+
 
         return "viewActionsST";
     }

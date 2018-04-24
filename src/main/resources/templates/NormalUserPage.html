@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Getting Started: Handling Form Submission</title>
+    <link th:href="@{/CSS_sheet/css.css}" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 
@@ -18,6 +19,10 @@
 
 <form action="#" th:action="@{/showbalance}" method="get">
     <p><input  type="submit" value="view Balance" /></p>
+</form>
+
+<form action="#" th:action="@{/logout}" method="get">
+    <input  type="submit" value="Logout :( "  /></p>
 </form>
 </body>
 
